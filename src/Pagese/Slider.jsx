@@ -1,7 +1,30 @@
 import React, { Component } from 'react'
 import './Style.css'
 
-export default class Slider extends Component {
+ class Slider extends Component {
+ constructor(props){
+  super(props)
+  this.state ={
+    shottitle:{
+      stitle1 :" This is Short title one.",
+      stitle2 :" This is Short Title tow.",
+      stitle3 :" This is Short Title Three."
+    },
+    mtitle:{
+     mtitel1:"Live with Md Parveg Gazi",
+     mtitel2:"Live with Mahamuda Akter",
+     mtitel3:"Live with fizia Islam Mahara"
+    } ,
+    blogtitle:{
+      blogtitle1:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem praesentium possimus nam assumenda quidem, id quibusdam aut laboriosam autem ipsum vel eaque ratione optio maiores libero dolorum amet vero voluptate saepe ducimus sunt? Esse nobis provident sit dignissimos ratione quisquam laboriosam! Autem atque incidunt vel saepe molestiae quae eos cum?",
+      blogtitle2:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem praesentium possimus nam assumenda quidem, id quibusdam aut laboriosam autem ipsum vel eaque ratione optio maiores libero dolorum amet vero voluptate saepe ducimus sunt? Esse nobis provident sit dignissimos ratione quisquam laboriosam! Autem atque incidunt vel saepe molestiae quae eos cum?",
+      blogtitle3:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem praesentium possimus nam assumenda quidem, id quibusdam aut laboriosam autem ipsum vel eaque ratione optio maiores libero dolorum amet vero voluptate saepe ducimus sunt? Esse nobis provident sit dignissimos ratione quisquam laboriosam! Autem atque incidunt vel saepe molestiae quae eos cum?"
+
+    },
+    channame:"Japan2.2"
+  }
+ }
+
   render() {
     return (
       <div>
@@ -18,13 +41,13 @@ export default class Slider extends Component {
         <div className="container">
         <div className='row bg-light'>
       <div className="col-md-6 "> 
-      <img src="Img/img1.jpg" class="d-block w-100" alt="sd"/>
+      <img src="Img/img1.jpg" class="simage d-block w-100" alt="sd"/>
       </div>
       <div className="col-md-6 "> 
-       <p className="shottitle">Lorem ipsum dolor sit amet.</p>
-       <h3 className='mtitle'>Live with Md Parveg Gazi</h3> 
-       <p className="blogtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem praesentium possimus nam assumenda quidem, id quibusdam aut laboriosam autem ipsum vel eaque ratione optio maiores libero dolorum amet vero voluptate saepe ducimus sunt? Esse nobis provident sit dignissimos ratione quisquam laboriosam! Autem atque incidunt vel saepe molestiae quae eos cum?</p>
-       <p className='channame'>Japan2.2</p>
+       <p className="shottitle">{this.state.shottitle.stitle1}</p>
+       <h3 className='mtitle'>{this.state.mtitle.mtitel1}</h3> 
+       <p className="blogtitle">{this.state.blogtitle.blogtitle1}</p>
+       <p className='channame'>{this.state.channame}</p>
       </div>
         </div>
         </div>
@@ -33,13 +56,13 @@ export default class Slider extends Component {
         <div className="container">
         <div className='row bg-light'>
       <div className="col-md-6 "> 
-      <img src="Img/img2.jpg" class="d-block w-100" alt="df"/>
+      <img src="Img/img2.jpg" class="simage d-block w-100" alt="df"/>
       </div>
       <div className="col-md-6 "> 
-       <p className="shottitle">Lorem ipsum dolor sit amet.</p>
-       <h3 className='mtitle'>Live with Md Parveg Gazi</h3> 
-       <p className="blogtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem praesentium possimus nam assumenda quidem, id quibusdam aut laboriosam autem ipsum vel eaque ratione optio maiores libero dolorum amet vero voluptate saepe ducimus sunt? Esse nobis provident sit dignissimos ratione quisquam laboriosam! Autem atque incidunt vel saepe molestiae quae eos cum?</p>
-       <p className='channame'>Japan2.2</p>
+       <p className="shottitle">{this.state.shottitle.stitle2} </p>
+       <h3 className='mtitle'>{this.state.mtitle.mtitel1}</h3> 
+       <p className="blogtitle">{this.state.blogtitle.blogtitle1}</p>
+       <p className='channame'>{this.state.channame}</p>
       </div>
         </div>
         </div>
@@ -48,13 +71,13 @@ export default class Slider extends Component {
         <div className="container">
         <div className='row bg-light'>
       <div className="col-md-6 "> 
-      <img src="Img/img3.jpg" class="d-block w-100" alt="sdf"/>
+      <img src="Img/img3.jpg" class="simage d-block w-100" alt="sdf"/>
       </div>
       <div className="col-md-6 "> 
-       <p className="shottitle">Lorem ipsum dolor sit amet.</p>
-       <h3 className='mtitle'>Live with Md Parveg Gazi</h3> 
-       <p className="blogtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem praesentium possimus nam assumenda quidem, id quibusdam aut laboriosam autem ipsum vel eaque ratione optio maiores libero dolorum amet vero voluptate saepe ducimus sunt? Esse nobis provident sit dignissimos ratione quisquam laboriosam! Autem atque incidunt vel saepe molestiae quae eos cum?</p>
-       <p className='channame'>Japan2.2</p>
+       <p className="shottitle"> {this.state.shottitle.stitle3}</p>
+       <h3 className='mtitle'>{this.state.mtitle.mtitel1}</h3> 
+       <p className="blogtitle">{this.state.blogtitle.blogtitle1}</p>
+       <p className='channame'>{this.state.channame}</p>
       </div>
         </div>
         </div>
@@ -68,6 +91,10 @@ export default class Slider extends Component {
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  <dir className="contriner">
+  <h2>Recent Post</h2>
+  </dir>
+ 
 </div>
 
  
@@ -76,3 +103,4 @@ export default class Slider extends Component {
   }
 }
 
+export default Slider

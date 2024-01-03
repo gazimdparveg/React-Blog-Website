@@ -36,3 +36,17 @@
     margin-right: -150px;
 
 }
+.card{
+    
+    margin-top: 15px;
+}
+.card-img-top{
+    height: 150px;
+
+}
+.btn-primary{
+    background-color: #9F96A1;
+}
+row{
+    margin:0 auto;
+}
