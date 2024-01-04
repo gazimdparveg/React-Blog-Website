@@ -30,18 +30,18 @@ import './Style.css'
       <div>
        
 
-     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+  <ol className="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
-  <div class="carousel-item active">
+  <div className="carousel-inner">
+  <div className="carousel-item active">
         <div className="container">
         <div className='row bg-light'>
       <div className="col-md-6 "> 
-      <img src="Img/img1.jpg" class="simage d-block w-100" alt="sd"/>
+      <img src="Img/img1.jpg" className="simage d-block w-100" alt="sd"/>
       </div>
       <div className="col-md-6 "> 
        <p className="shottitle">{this.state.shottitle.stitle1}</p>
@@ -52,11 +52,11 @@ import './Style.css'
         </div>
         </div>
     </div>
-    <div class="carousel-item  ">
+    <div className="carousel-item  ">
         <div className="container">
         <div className='row bg-light'>
       <div className="col-md-6 "> 
-      <img src="Img/img2.jpg" class="simage d-block w-100" alt="df"/>
+      <img src="Img/img2.jpg" className="simage d-block w-100" alt="df"/>
       </div>
       <div className="col-md-6 "> 
        <p className="shottitle">{this.state.shottitle.stitle2} </p>
@@ -67,11 +67,11 @@ import './Style.css'
         </div>
         </div>
     </div> 
-     <div class="carousel-item  ">
+     <div className="carousel-item  ">
         <div className="container">
         <div className='row bg-light'>
       <div className="col-md-6 "> 
-      <img src="Img/img3.jpg" class="simage d-block w-100" alt="sdf"/>
+      <img src="Img/img3.jpg" className="simage d-block w-100" alt="sdf"/>
       </div>
       <div className="col-md-6 "> 
        <p className="shottitle"> {this.state.shottitle.stitle3}</p>
@@ -83,13 +83,13 @@ import './Style.css'
         </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+  <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+  <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="sr-only">Next</span>
   </a>
   <dir className="contriner">
   <h2>Recent Post</h2>
