@@ -1,13 +1,11 @@
 import React from 'react'
-import Hadder from './Hadder';
-import Slider from './Slider';
- import Post from './Post';
- 
-function Home() {
+import Hadder from './Hadder'
+import Post from './Post';
+
+function Blog() {
   return (
     <div>
-      <Hadder/>
-      <Slider/>
+        <Hadder/>
       <div className='container'>
       <div className="row">
             <div className="col-md-3">
@@ -38,9 +36,8 @@ function Home() {
 
         </div>
       </div>
-     
     </div>
   )
 }
 
-export default Home
+export default Blog

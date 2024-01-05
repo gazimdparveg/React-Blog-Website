@@ -1,8 +1,12 @@
 import React from 'react'
+import Hadder from './Hadder'
 
 function About() {
   return (
+  
     <div>
+        <Hadder/>
+        
       <div className="container">
         <img src="Img/imgp4.jpg" className="simage d-block w-100" alt="" />
         <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
