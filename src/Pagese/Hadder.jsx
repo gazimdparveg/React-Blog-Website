@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
  
 
 
@@ -16,14 +16,14 @@ function Hadder() {
     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
       <li className="nav-item active">
         
-        <Link className="nav-link" to={"/"}>Home</Link>
+        <NavLink className="nav-link" to={"/"}>Home</NavLink>
       </li>
       <li className="nav-item">
-      <Link className="nav-link" to={"/About"}>About </ Link >
+      <NavLink className="nav-link" to={"/About"}>About </ NavLink >
       
       </li>
       <li className="nav-item">
-      <Link className="nav-link" to={"/Blog"}>Blog </ Link >
+      <NavLink className="nav-link" to={"/Blog"}>Blog </ NavLink >
       </li>
     </ul>
      

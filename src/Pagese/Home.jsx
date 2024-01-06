@@ -2,6 +2,8 @@ import React from 'react'
 import Hadder from './Hadder';
 import Slider from './Slider';
  import Post from './Post';
+ import Pagenishin from './Pagenishin';
+import Footer from './Footer';
  
 function Home() {
   return (
@@ -36,9 +38,11 @@ function Home() {
             </div>
 
 
-        </div>
+        </div> <br />
+        <Pagenishin/>
+        
       </div>
-     
+      <Footer/>
     </div>
   )
 }

@@ -5,6 +5,7 @@ import Home from './Pagese/Home';
 import About from './Pagese/About';
 import Blog from './Pagese/Blog'; 
 import { BrowserRouter , Routes, Route} from "react-router-dom";
+import Fore from './Pagese/Fore';  
  
 function App() {
   
@@ -20,6 +21,8 @@ function App() {
     <Route path='/' element={<Home/>}> </Route>
     <Route path='/About' element={<About/>}> </Route>
     <Route path='/Blog' element={<Blog/>}> </Route>
+    <Route path='*' element={<Fore/>}></Route> 
+     
    </Routes>
   </BrowserRouter>
 
